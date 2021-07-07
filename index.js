@@ -51,6 +51,9 @@ Display.prototype.show = function (name, displaymsg) {
                       <strong>Message: </strong> ${displaymsg}
                       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>`;
+  setTimeout(function () {
+    msg.innerHTML = "";
+  }, 3000);
 };
 
 let library = document.getElementById("library");
